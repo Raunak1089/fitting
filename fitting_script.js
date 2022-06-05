@@ -55,6 +55,9 @@ for (let i = 0; i < yax.data.length; i += 4) {
 
 
 function draw_point(x, y, prec=3) {
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+scale = 5;
 	 ctx.lineWidth = 5;
 	 ctx.strokeStyle = 'blue'; 
    ctx.beginPath();
