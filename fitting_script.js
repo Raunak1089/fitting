@@ -58,6 +58,8 @@ function draw_point(x, y, prec=3) {
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 scale = 5;
+let originx = canvas.width/5;
+let originy = canvas.height*4/5;
 	 ctx.lineWidth = 5;
 	 ctx.strokeStyle = 'blue'; 
    ctx.beginPath();
