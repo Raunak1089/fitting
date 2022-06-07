@@ -323,7 +323,7 @@ ctx.beginPath();
 
     ctx.moveTo(0,originy-scale*funct(-originx));
 
-    for (let x = -originx/scale; x <= (canvas.width-originx)/scale; x++) {
+    for (let x = -originx/scale; x <= (canvas.width-originx)/scale; x+=1/scale) {
       ctx.lineTo(scale*x+originx,originy-scale*funct(x));
     }
 
@@ -480,7 +480,7 @@ function draw(){
 
     ctx.moveTo(0,originy-scale*funct(-originx));
 
-    for (let x = -originx/scale; x <= (canvas.width-(originx))/scale; x++) {
+    for (let x = -originx/scale; x <= (canvas.width-(originx))/scale; x+=1/scale) {
       ctx.lineTo(scale*x+originx,originy-scale*funct(x));
     }
 
